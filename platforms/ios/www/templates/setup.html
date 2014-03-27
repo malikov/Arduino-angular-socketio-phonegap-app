@@ -6,16 +6,16 @@
   <ion-content class="has-header">
     <h2>Setup view</h2>
     
-    <div class="list list-inset" ng-model="Auth">
+    <div class="list list-inset">
 	  <label class="item item-input">
-	    <input type="text" placeholder="Enter server Ip"  ng-model="Auth.server"/>
+	    <input type="text" placeholder="Enter server Ip"  value="{{serverIp}}"/>
 	  </label>
 	  <label class="item item-input">
-	    <input type="text" placeholder="Enter port number" ng-model="Auth.port"/>
+	    <input type="text" placeholder="Enter port number" value="{{serverPort}}"/>
 	  </label>
 	</div>
 	<div class="padding">
-    	<button class="button button-block button-positive">
+    	<button class="button button-block button-positive" ng-click="connect()">
     		Connect to robot
     	</button>
     </div>

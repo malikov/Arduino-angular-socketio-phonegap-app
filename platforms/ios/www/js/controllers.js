@@ -1,22 +1,23 @@
-var app = angular.module('ardbot.controllers', []);
+var app = angular.module('ArdBot.controllers', []);
 
 app.controller('AppCtrl', function($scope) {
 	/*
 		Controller for the entire app but mostly for the left menu
 	*/
+  console.log('line 7 controller.js --> AppCtrl');
 })
 
-app.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+app.controller('SetupCtrl',['$scope','Constants',
+ function($scope,Constants) {
+  console.log('line 12 controller.js --> SetupCtrl');
 })
 
-app.controller('PlaylistCtrl', function($scope, $stateParams) {
-	
+app.controller('ControlCtrl',['$scope',
+ function($scope) {
+  console.log('line 17 controller.js --> ControlCtrl');
+})
+
+app.controller('LogCtrl',['$scope',
+ function($scope) {
+  console.log('line 22 controller.js --> LogCtrl');
 })
