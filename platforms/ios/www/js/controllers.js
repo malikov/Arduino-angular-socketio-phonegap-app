@@ -10,6 +10,14 @@ app.controller('AppCtrl', function($scope) {
 app.controller('SetupCtrl',['$scope','Constants',
  function($scope,Constants) {
   console.log('line 12 controller.js --> SetupCtrl');
+
+  $scope.serverIp = Constants.serverIp;
+  $scope.serverPort = Constants.serverPort;
+
+  $scope.connect = function(){
+  	alert('Connecting to server');
+  }
+
 }])
 
 app.controller('ControlCtrl',['$scope',

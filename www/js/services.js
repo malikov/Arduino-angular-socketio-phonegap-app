@@ -5,7 +5,7 @@ app.service('Constants',[
   
   return {
     serverIp : "112.168.1.0",
-    port : 3000
+    serverPort : 3000
   }
 
 }]);
