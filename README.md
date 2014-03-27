@@ -14,10 +14,10 @@ An app made with angularjs, phonegap, socketio and [ionic](http://ionicframework
 3. run
 
 ```bash
-$ cd Arduino-angular-socketio-phonegap-app
-$ sudo npm install -g bower
-$ npm install
-$ gulp init
+cd Arduino-angular-socketio-phonegap-app
+npm install -g bower
+npm install
+gulp init
 ```
 
 This will download the most recent Ionic release from bower, and copy over the SCSS files into `./sass` for future editing.
