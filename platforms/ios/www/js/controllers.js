@@ -10,14 +10,14 @@ app.controller('AppCtrl', function($scope) {
 app.controller('SetupCtrl',['$scope','Constants',
  function($scope,Constants) {
   console.log('line 12 controller.js --> SetupCtrl');
-})
+}])
 
 app.controller('ControlCtrl',['$scope',
  function($scope) {
   console.log('line 17 controller.js --> ControlCtrl');
-})
+}])
 
 app.controller('LogCtrl',['$scope',
  function($scope) {
   console.log('line 22 controller.js --> LogCtrl');
-})
+}])
