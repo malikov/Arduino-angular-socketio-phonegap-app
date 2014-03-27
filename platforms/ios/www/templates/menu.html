@@ -1,28 +1,33 @@
 <ion-side-menus>
-
+  <!-- app content -->
   <ion-pane ion-side-menu-content>
     <ion-nav-bar class="bar-stable">
       <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
     </ion-nav-bar>
     <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
   </ion-pane>
+  <!-- app content end -->
 
+  <!-- app side menu -->
   <ion-side-menu side="left">
-    <header class="bar bar-header bar-stable">
-      <h1 class="title">Left</h1>
+    <header class="bar bar-header bar-positive">
+      <h1 class="title">Ardbot</h1>
     </header>
+    
     <ion-content class="has-header">
       <ion-list>
-        <ion-item nav-clear menu-close href="#/app/search">
-          Search
+        <ion-item nav-clear menu-close href="#/app/setup">
+          Setup
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/browse">
-          Browse
+        <ion-item nav-clear menu-close href="#/app/control">
+          Control Center
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/playlists">
-          Playlists
+        <ion-item nav-clear menu-close href="#/app/log">
+          Log
         </ion-item>
       </ion-list>
     </ion-content>
+
   </ion-side-menu>
+  <!-- app side menu end -->
 </ion-side-menus>
