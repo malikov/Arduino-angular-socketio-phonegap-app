@@ -1,0 +1,24 @@
+<ion-view title="Setup">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header">
+    <h2>Setup view</h2>
+    
+    <div class="list list-inset" ng-model="Auth">
+	  <label class="item item-input">
+	    <input type="text" placeholder="Enter server Ip"  ng-model="Auth.server"/>
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Enter port number" ng-model="Auth.port"/>
+	  </label>
+	</div>
+	<div class="padding">
+    	<button class="button button-block button-positive">
+    		Connect to robot
+    	</button>
+    </div>
+
+  </ion-content>
+</ion-view>

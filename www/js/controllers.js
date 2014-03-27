@@ -1,9 +1,12 @@
-angular.module('starter.controllers', [])
+var app = angular.module('ardbot.controllers', []);
 
-.controller('AppCtrl', function($scope) {
+app.controller('AppCtrl', function($scope) {
+	/*
+		Controller for the entire app but mostly for the left menu
+	*/
 })
 
-.controller('PlaylistsCtrl', function($scope) {
+app.controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
@@ -14,5 +17,6 @@ angular.module('starter.controllers', [])
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+app.controller('PlaylistCtrl', function($scope, $stateParams) {
+	
 })
