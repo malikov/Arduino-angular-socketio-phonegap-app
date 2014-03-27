@@ -18,15 +18,48 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/factories.js"></script>
-    <script src="js/services.js"></script>
   </head>
 
   <body ng-app="ArdBot">
     <ion-nav-view>
     </ion-nav-view>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/factories.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/socket.io.js"></script>
+    <script>
+        var socket = io.connect('http://192.168.1.107:80');
+
+        if(socket.connected){
+            alert('Connected');
+
+            setInterval(function () {
+                socket.send('1');
+                socket.send('30\n');
+            }, 1000);
+
+            
+            setInterval(function () {
+                socket.send('2');
+                socket.send('30\n');
+            }, 2000);
+
+            socket.on('message', function (data) {
+                console.log('message received');
+                console.log(data);
+            });
+
+        }else{
+            console.log("Connection not established");
+            alert('Not connected');
+        }
+        
+
+      
+        
+    </script>
   </body>
 </html>

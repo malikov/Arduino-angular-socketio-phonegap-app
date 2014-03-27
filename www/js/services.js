@@ -9,3 +9,15 @@ app.service('Constants',[
   }
 
 }]);
+
+app.service('SocketIo',[
+	function(){
+
+	var socket = {
+		_init : function(serverIp,serverPort){
+			this = io.connect();
+		}
+	}
+
+	return socket;
+}]);
